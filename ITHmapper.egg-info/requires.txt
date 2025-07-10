@@ -1,0 +1,14 @@
+igraph
+louvain
+scanpy
+anndata
+numpy
+pandas
+hotspotsc
+scikit-learn
+scipy
+annoy
+tqdm
+
+[:python_version < "3.9"]
+importlib_resources

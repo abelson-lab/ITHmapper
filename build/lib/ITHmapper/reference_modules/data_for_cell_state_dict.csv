@@ -1,0 +1,260 @@
+﻿cancer_type,original_label,new_label
+Bladder,cancer_state_0_0.1,Hypoxic Glycolytic Adaptive_0_0.1
+Bladder,cancer_state_1_0.1,TNF-Activated Stress_1_0.1
+Bladder,cancer_state_10_1,Translational Proteostasis_10_1
+Bladder,cancer_state_13_0.4,Interferon Immune-Active_13_0.4
+Bladder,cancer_state_14_0.4,Proliferative_14_0.4
+Bladder,cancer_state_14_0.9,Inflammatory Mesenchymal_14_0.9
+Bladder,cancer_state_15_0.7,Proinflammatory Mesenchymal_15_0.7
+Bladder,cancer_state_2_0.1,Proteostasis Stress_2_0.1
+Bladder,cancer_state_2_0.2,ER-Stress Differentiation_2_0.2
+Bladder,cancer_state_20_0.6,Antigen-Presenting Immune_20_0.6
+Bladder,cancer_state_20_0.7,Proliferative_20_0.7
+Bladder,cancer_state_3_0.4,Protein-Synthesis Proteostasis_3_0.4
+Bladder,cancer_state_5_0.5,Hypoxic Keratinizing_5_0.5
+Bladder,cancer_state_6_0.1,Proliferative_6_0.1
+Bladder,cancer_state_6_0.2,Interferon Adaptive Immune_6_0.2
+Bladder,cancer_state_6_0.5,Proteostasis Stress Hypoxic_6_0.5
+Bladder,cancer_state_7_0.2,Inflammatory Mesenchymal Immune_7_0.2
+Bladder,cancer_state_9_1,Interferon Lymphoid Immune_9_1
+Breast,cancer_state_1_0.1,Proliferative_1_0.1
+Breast,cancer_state_1_0.2,OXPHOS-High Maintenance_1_0.2
+Breast,cancer_state_1_0.4,Inflammatory KRAS EMT-Like_1_0.4
+Breast,cancer_state_10_0.2,Proliferative_10_0.2
+Breast,cancer_state_13_1,Inflammatory ER-Low_13_1
+Breast,cancer_state_16_0.9,Hormone-Responsive Luminal_16_0.9
+Breast,cancer_state_18_1,Hypoxic Glycolytic EMT_18_1
+Breast,cancer_state_2_0.4,Hypoxic Inflammatory Hormone_2_0.4
+Breast,cancer_state_21_0.9,Starvation Translation-Active_21_0.9
+Breast,cancer_state_24_0.6,Interferon-Activated Immune_24_0.6
+Breast,cancer_state_3_0.3,Proliferative_3_0.3
+Breast,cancer_state_4_0.2,Estrogen NF-kB-Active_4_0.2
+Breast,cancer_state_4_0.3,Estrogen Lipid-Metabolic_4_0.3
+Breast,cancer_state_5_0.2,OXPHOS-High Stress_5_0.2
+Breast,cancer_state_5_0.3,OXPHOS Translation-High_5_0.3
+Breast,cancer_state_5_0.8,Translation-Active Metabolic_5_0.8
+Breast,cancer_state_6_0.2,Stress Translation-Active_6_0.2
+Breast,cancer_state_6_0.5,Proliferative_6_0.5
+Breast,cancer_state_6_0.8,ECM-Remodeling_6_0.8
+Breast,cancer_state_8_0.2,Proliferative_8_0.2
+Breast,cancer_state_8_0.9,Lipid-Metabolic_8_0.9
+Breast,cancer_state_9_0.2,Proliferative_9_0.2
+Breast,cancer_state_9_0.3,Inflammatory Hypoxic Stress_9_0.3
+Breast,cancer_state_9_0.7,Proliferative_9_0.7
+Colorectal,cancer_state_0_0.4,KRAS Inflammatory Mesenchymal_0_0.4
+Colorectal,cancer_state_0_0.6,Innate Immune Stress_0_0.6
+Colorectal,cancer_state_1_0.2,Translation-Active Proteostasis_1_0.2
+Colorectal,cancer_state_1_0.5,Translation-Active Proteostasis_1_0.5
+Colorectal,cancer_state_10_0.7,Interferon OXPHOS_10_0.7
+Colorectal,cancer_state_11_0.8,Proliferative_11_0.8
+Colorectal,cancer_state_12_0.7,Proliferative_12_0.7
+Colorectal,cancer_state_13_0.7,Translation-Active Stress_13_0.7
+Colorectal,cancer_state_2_0.2,Inflammatory EMT Hypoxic_2_0.2
+Colorectal,cancer_state_3_0.5,Inflammatory KRAS Matrix Remodeling_3_0.5
+Colorectal,cancer_state_5_0.4,Unclear_5_0.4
+Colorectal,cancer_state_6_0.5,Proliferative_6_0.5
+Colorectal,cancer_state_7_0.6,Lipid Metabolic Adapted_7_0.6
+Colorectal,cancer_state_8_0.4,ECM Remodeling Adhesive_8_0.4
+Colorectal,cancer_state_8_0.6,OXPHOS Proliferative_8_0.6
+Colorectal,cancer_state_9_0.6,Collagen ECM Remodeling_9_0.6
+Brain,cancer_state_0_1,Mesenchymal ECM-Rich_0_1
+Brain,cancer_state_1_0.3,OXPHOS Translation-High_1_0.3
+Brain,cancer_state_1_0.5,Neuronal Synaptic Active_1_0.5
+Brain,cancer_state_10_0.8,Proliferative_10_0.8
+Brain,cancer_state_11_1,Innate Immune-Active_11_1
+Brain,cancer_state_12_0.3,Proliferative_12_0.3
+Brain,cancer_state_15_0.3,OXPHOS Bioenergetic Detox_15_0.3
+Brain,cancer_state_15_0.6,Cytokine Immune-Active_15_0.6
+Brain,cancer_state_16_1,Proliferative DNA Repair_16_1
+Brain,cancer_state_18_0.7,Hypoxic Inflammatory Proteostasis_18_0.7
+Brain,cancer_state_18_1,Proliferative_18_1
+Brain,cancer_state_19_0.5,Unclear_19_0.5
+Brain,cancer_state_19_0.8,Hedgehog Inflammatory_19_0.8
+Brain,cancer_state_2_0.3,Proliferative_2_0.3
+Brain,cancer_state_4_0.4,Starvation Translation-High_4_0.4
+Brain,cancer_state_4_0.7,Hypoxic Mesenchymal Transition_4_0.7
+Brain,cancer_state_4_0.8,Stress Translation-High_4_0.8
+Brain,cancer_state_5_0.1,Unclear_5_0.1
+Brain,cancer_state_5_0.3,Hypoxic Glycolytic_5_0.3
+Brain,cancer_state_6_0.1,Synaptic_6_0.1
+Brain,cancer_state_6_0.2,Proliferative_6_0.2
+Brain,cancer_state_6_1,Neurohormone Signaling_6_1
+Brain,cancer_state_9_0.2,Heat Shock Inflammatory_9_0.2
+Ovarian_HGSOC,cancer_state_0_0.6,OXPHOS Translation-High_0_0.6
+Ovarian_HGSOC,cancer_state_1_0.7,Translation Immune_1_0.7
+Ovarian_HGSOC,cancer_state_11_0.7,Antigen-Presenting Immune_11_0.7
+Ovarian_HGSOC,cancer_state_12_0.4,EMT Proteostasis_12_0.4
+Ovarian_HGSOC,cancer_state_12_0.8,Starvation Translational_12_0.8
+Ovarian_HGSOC,cancer_state_13_0.3,OXPHOS Proliferative_13_0.3
+Ovarian_HGSOC,cancer_state_14_0.6,Estrogen Inflammatory Glycosylation_14_0.6
+Ovarian_HGSOC,cancer_state_15_0.4,Ciliogenesis Biogenesis_15_0.4
+Ovarian_HGSOC,cancer_state_19_0.8,Inflammatory PI3K_19_0.8
+Ovarian_HGSOC,cancer_state_2_0.5,Hypoxic Glycolytic Stress_2_0.5
+Ovarian_HGSOC,cancer_state_2_0.7,Proliferative_2_0.7
+Ovarian_HGSOC,cancer_state_21_0.6,Proliferative_21_0.6
+Ovarian_HGSOC,cancer_state_23_0.8,Translation Starvation_23_0.8
+Ovarian_HGSOC,cancer_state_25_0.8,Inflammatory ECM_25_0.8
+Ovarian_HGSOC,cancer_state_3_0.1,Proliferative_3_0.1
+Ovarian_HGSOC,cancer_state_3_0.5,Translational Stress-Active_3_0.5
+Ovarian_HGSOC,cancer_state_3_0.6,Interferon Immune-Active_3_0.6
+Ovarian_HGSOC,cancer_state_5_0.4,Inflammatory KRAS NF-kB_5_0.4
+Ovarian_HGSOC,cancer_state_6_0.3,Protein Synthesis Active_6_0.3
+Ovarian_HGSOC,cancer_state_6_0.4,rRNA Translation-High_6_0.4
+Ovarian_HGSOC,cancer_state_7_0.3,Interferon OXPHOS_7_0.3
+Ovarian_HGSOC,cancer_state_7_0.6,Proliferative_7_0.6
+Ovarian_HGSOC,cancer_state_8_0.5,NF-kB Junctional_8_0.5
+Kidney_RCC,cancer_state_0_0.1,Translation-High Stress_0_0.1
+Kidney_RCC,cancer_state_1_0.1,Coagulative EMT_1_0.1
+Kidney_RCC,cancer_state_1_0.3,ECM Stress-Response_1_0.3
+Kidney_RCC,cancer_state_1_0.5,Translation-Stress Adapted_1_0.5
+Kidney_RCC,cancer_state_11_0.6,ECM-Coagulation Remodeling_11_0.6
+Kidney_RCC,cancer_state_11_0.8,Hypoxic Inflammatory Translation_11_0.8
+Kidney_RCC,cancer_state_3_0.1,OXPHOS Translation-High_3_0.1
+Kidney_RCC,cancer_state_3_0.2,OXPHOS Detoxification_3_0.2
+Kidney_RCC,cancer_state_4_0.1,Proliferative_4_0.1
+Kidney_RCC,cancer_state_4_0.2,Metabolic Detox_4_0.2
+Kidney_RCC,cancer_state_5_0.1,Proliferative_5_0.1
+Kidney_RCC,cancer_state_5_0.6,Translation-High Inflammatory_5_0.6
+Kidney_RCC,cancer_state_9_0.7,ECM Cytokine-Rich_9_0.7
+Brain_LGG,cancer_state_0_0.2,Neuronal Synaptic_0_0.2
+Brain_LGG,cancer_state_0_0.4,Hypoxic Mesenchymal_0_0.4
+Brain_LGG,cancer_state_1_0.2,Hypoxic Glycolytic_1_0.2
+Brain_LGG,cancer_state_1_0.3,OXPHOS Translation-High_1_0.3
+Brain_LGG,cancer_state_10_0.8,Proliferative_10_0.8
+Brain_LGG,cancer_state_11_1,Innate Immune-Active_11_1
+Brain_LGG,cancer_state_14_0.4,ERBB2 PI3K Signaling_14_0.4
+Brain_LGG,cancer_state_15_0.6,Cytokine Immune-Active_15_0.6
+Brain_LGG,cancer_state_18_0.7,Hypoxic Inflammatory Proteostasis_18_0.7
+Brain_LGG,cancer_state_18_1,Proliferative_18_1
+Brain_LGG,cancer_state_19_0.8,Hedgehog Inflammatory_19_0.8
+Brain_LGG,cancer_state_3_0.1,Proliferative_3_0.1
+Brain_LGG,cancer_state_3_0.7,Neurotransmitter Release_3_0.7
+Brain_LGG,cancer_state_4_0.1,ECM Remodeling_4_0.1
+Brain_LGG,cancer_state_4_0.4,Starvation Translation-High_4_0.4
+Brain_LGG,cancer_state_4_0.5,Hypoxic Inflammatory Mesenchymal_4_0.5
+Brain_LGG,cancer_state_5_0.1,Unclear_5_0.1
+Brain_LGG,cancer_state_6_0.1,Neurotransmitter Release_6_0.1
+Brain_LGG,cancer_state_6_1,Neurohormone Signaling_6_1
+Brain_LGG,cancer_state_7_0.1,Heat Shock Proliferative_7_0.1
+Brain_LGG,cancer_state_9_0.7,Proliferative_9_0.7
+Liver_HCC,cancer_state_0_0.1,Innate Immune Neuronal-like_0_0.1
+Liver_HCC,cancer_state_0_1,Immune Matrix Remodeling_0_1
+Liver_HCC,cancer_state_12_0.9,Proliferative_12_0.9
+Liver_HCC,cancer_state_14_0.8,Metabolic Detox Active_14_0.8
+Liver_HCC,cancer_state_2_0.1,EMT Mesenchymal Invasive_2_0.1
+Liver_HCC,cancer_state_3_0.1,Metabolic Oxidative_3_0.1
+Liver_HCC,cancer_state_4_0.1,Proliferative_4_0.1
+Liver_HCC,cancer_state_5_0.1,Metabolic Coagulation Active_5_0.1
+Liver_HCC,cancer_state_5_0.6,Neuro-Immune Mesenchymal_5_0.6
+Liver_HCC,cancer_state_7_0.5,Proliferative_7_0.5
+Liver_HCC,cancer_state_7_0.7,ECM Complement Hypoxic_7_0.7
+Liver_HCC,cancer_state_8_0.7,Proliferative_8_0.7
+Liver_HCC,cancer_state_9_0.2,Inflammatory ECM Remodeling_9_0.2
+Liver_HCC,cancer_state_9_0.5,Proliferative_9_0.5
+Lung_LUAD,cancer_state_0_0.4,Proliferative OXPHOS-High_0_0.4
+Lung_LUAD,cancer_state_0_0.7,MHC-II Ciliated Metabolic_0_0.7
+Lung_LUAD,cancer_state_0_0.9,Proteasome-High Stress Reponsive_0_0.9
+Lung_LUAD,cancer_state_12_0.7,Interferon ECM-Remodeling_12_0.7
+Lung_LUAD,cancer_state_12_0.9,NFkB Translation Stress_12_0.9
+Lung_LUAD,cancer_state_2_0.3,Hypoxia Glycolytic EMT_2_0.3
+Lung_LUAD,cancer_state_2_0.5,Hypoxia Glycolytic EMT_2_0.5
+Lung_LUAD,cancer_state_2_0.9,Proliferative_2_0.9
+Lung_LUAD,cancer_state_3_0.9,Interferon EMT Fibrotic_3_0.9
+Lung_LUAD,cancer_state_7_0.4,Keratinized Squamous_7_0.4
+Lung_LUAD,cancer_state_7_0.6,MYC OXPHOS_7_0.6
+Lung_LUAD,cancer_state_8_0.7,NF-kB Stress-Response_8_0.7
+Lung_LUAD,cancer_state_9_0.2,Alveolar OXPHOS-High_9_0.2
+Neuroblastoma,cancer_state_0_0.1,Proliferative OXPHOS Stress_0_0.1
+Neuroblastoma,cancer_state_1_0.1,Synaptic Differentiated_1_0.1
+Neuroblastoma,cancer_state_1_0.4,Synaptic Neural Active_1_0.4
+Neuroblastoma,cancer_state_12_1,Differentiated Neuronal_12_1
+Neuroblastoma,cancer_state_16_0.3,Interferon Immune-Active_16_0.3
+Neuroblastoma,cancer_state_16_0.6,Proliferative_16_0.6
+Neuroblastoma,cancer_state_18_0.5,Proliferative DNA Repair_18_0.5
+Neuroblastoma,cancer_state_19_0.6,Proliferative_19_0.6
+Neuroblastoma,cancer_state_2_0.3,Proliferative_2_0.3
+Neuroblastoma,cancer_state_2_0.9,Neuro-Immune Signalling_2_0.9
+Neuroblastoma,cancer_state_20_0.9,Adhesive Developmental Signalling_20_0.9
+Neuroblastoma,cancer_state_22_0.9,Neuronal Immune Activation_22_0.9
+Neuroblastoma,cancer_state_24_0.5,Heme Stress Response_24_0.5
+Neuroblastoma,cancer_state_25_1,Proliferative_25_1
+Neuroblastoma,cancer_state_26_0.6,DNA Damage Response_26_0.6
+Neuroblastoma,cancer_state_3_0.3,Translation-High Proteostasis_3_0.3
+Neuroblastoma,cancer_state_3_0.8,Translation-High Proteostasis_3_0.8
+Neuroblastoma,cancer_state_3_1,Translation-High Proteostasis_3_1
+Neuroblastoma,cancer_state_4_0.3,Neurotransmitter OXPHOS_4_0.3
+Neuroblastoma,cancer_state_4_0.4,Hypoxic Inflammatory Stress_4_0.4
+Neuroblastoma,cancer_state_5_0.1,Hypoxic Inflammatory Neurotransmitter_5_0.1
+Neuroblastoma,cancer_state_5_0.2,Proteostasis Stress_5_0.2
+Neuroblastoma,cancer_state_6_0.2,Proliferative_6_0.2
+Neuroblastoma,cancer_state_7_0.2,Interferon Neuronal_7_0.2
+Neuroblastoma,cancer_state_7_0.6,Antigen-Presenting Immune_7_0.6
+Neuroblastoma,cancer_state_7_0.9,Translation-High Proteostasis_7_0.9
+Neuroblastoma,cancer_state_8_0.2,Proliferative_8_0.2
+Neuroblastoma,cancer_state_8_0.5,Proliferative_8_0.5
+Neuroblastoma,cancer_state_9_0.4,Proliferative_9_0.4
+Pancreas,cancer_state_1_0.3,Proteostasis Stress_1_0.3
+Pancreas,cancer_state_1_0.5,KRAS EMT-Motile_1_0.5
+Pancreas,cancer_state_10_0.3,Endocrine Differentiated_10_0.3
+Pancreas,cancer_state_13_0.7,Xenobiotic Detoxification High_13_0.7
+Pancreas,cancer_state_2_0.7,Complement Mesenchymal_2_0.7
+Pancreas,cancer_state_3_0.2,OXPHOS Translation-High_3_0.2
+Pancreas,cancer_state_4_0.1,Proliferative_4_0.1
+Pancreas,cancer_state_4_0.4,KRAS Inflammatory Mesenchymal_4_0.4
+Pancreas,cancer_state_5_0.4,Proteostasis Stress_5_0.4
+Pancreas,cancer_state_5_0.8,Inflammatory UPR Active_5_0.8
+Pancreas,cancer_state_7_0.1,Inflammatory Detoxifier_7_0.1
+Pancreas,cancer_state_8_0.4,Proliferative_8_0.4
+Pancreas,cancer_state_8_1,DNA Damage Stress_8_1
+Prostate,cancer_state_0_0.1,OXPHOS_0_0.1
+Prostate,cancer_state_0_0.3,Androgen Inflammatory Cell Death_0_0.3
+Prostate,cancer_state_1_0.3,Translational Starvation Stress_1_0.3
+Prostate,cancer_state_1_0.8,Translational Stress Proteostasis_1_0.8
+Prostate,cancer_state_12_0.4,Proteostasis Inflammatory_12_0.4
+Prostate,cancer_state_13_0.9,Inflammatory Cell-Cycle Arrest_13_0.9
+Prostate,cancer_state_18_0.8,Lipid Metabolic Adaptive_18_0.8
+Prostate,cancer_state_2_0.1,Inflammatory PI3K_2_0.1
+Prostate,cancer_state_2_0.5,Glycolysation Secretion_2_0.5
+Prostate,cancer_state_2_0.8,OXPHOS Immune_2_0.8
+Prostate,cancer_state_20_0.8,Proliferative_20_0.8
+Prostate,cancer_state_4_0.2,Heat-Shock Stress_4_0.2
+Prostate,cancer_state_4_0.4,Heat-Shock Stress_4_0.4
+Prostate,cancer_state_4_0.8,Heat-Shock Stress_4_0.8
+Prostate,cancer_state_4_0.9,Inflammatory Coagulation Apoptotic_4_0.9
+Prostate,cancer_state_5_0.2,Translational Starvation Adaptive_5_0.2
+Prostate,cancer_state_7_0.4,Translational Stress Adapted_7_0.4
+Prostate,cancer_state_7_0.5,Lipid Hormone Metabolic_7_0.5
+Prostate,cancer_state_9_0.9,Interferon Immune Activated_9_0.9
+Colorectal_READ,cancer_state_0_0.3,Proliferative_0_0.3
+Colorectal_READ,cancer_state_1_0.2,Translation-Active Proteostasis_1_0.2
+Colorectal_READ,cancer_state_10_0.9,Bile Acid Metabolic_10_0.9
+Colorectal_READ,cancer_state_11_0.8,Proliferative_11_0.8
+Colorectal_READ,cancer_state_2_0.2,Inflammatory EMT Hypoxic_2_0.2
+Colorectal_READ,cancer_state_3_0.5,Inflammatory Matrix Remodeling_3_0.5
+Colorectal_READ,cancer_state_5_0.4,Unclear_5_0.4
+Colorectal_READ,cancer_state_6_0.5,Proliferative_6_0.5
+Colorectal_READ,cancer_state_7_0.6,Lipid Metabolic Adapted_7_0.6
+Colorectal_READ,cancer_state_7_0.9,Apoptotic Stress_7_0.9
+Colorectal_READ,cancer_state_8_0.6,OXPHOS Stressed_8_0.6
+Colorectal_READ,cancer_state_9_0.6,Collagen ECM Remodeling_9_0.6
+Gastric,cancer_state_1_0.1,Proteostasis Stress_1_0.1
+Gastric,cancer_state_10_0.9,NF-kB Inflammatory_10_0.9
+Gastric,cancer_state_12_1,Proliferative_12_1
+Gastric,cancer_state_13_0.5,Complement Glycosylation_13_0.5
+Gastric,cancer_state_13_0.9,Epigenetic Hormone Signaling_13_0.9
+Gastric,cancer_state_15_0.5,Metabolic Glycosylation_15_0.5
+Gastric,cancer_state_16_1,Global Translation_16_1
+Gastric,cancer_state_2_0.1,Proliferative_2_0.1
+Gastric,cancer_state_3_0.1,Proteostasis Stress OXPHOS_3_0.1
+Gastric,cancer_state_3_0.6,Innate Immune Stress_3_0.6
+Gastric,cancer_state_3_0.8,Translation Biogenesis_3_0.8
+Gastric,cancer_state_4_0.7,Proliferative OXPHOS Immune_4_0.7
+Gastric,cancer_state_5_0.1,Proteostasis Stress OXPHOS_5_0.1
+Gastric,cancer_state_5_0.7,Unclear_5_0.7
+Gastric,cancer_state_6_0.1,TNF Inflammatory_6_0.1
+Gastric,cancer_state_6_0.3,ECM Complement Glycosylation_6_0.3
+Gastric,cancer_state_6_0.8,Proteostasis Stress_6_0.8
+Gastric,cancer_state_7_0.1,Translation Oxidative_7_0.1
+Gastric,cancer_state_8_0.1,Ciliogenesis Biogenesis_8_0.1
+Gastric,cancer_state_8_0.6,Proteostasis Stress_8_0.6
+Gastric,cancer_state_8_0.7,Epigenetic Estrogen_8_0.7
