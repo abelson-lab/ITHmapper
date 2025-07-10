@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ITHmapper"
+version = "0.1.0"
+description = "A pipeline for mapping scRNA-seq query cells to reference cell states using Hotspot, meta-modules, and consensus profiles."
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    {name = "Ido Nofech-Mozes", email = "ido.nofechmozes@mail.utoronto.ca"},
+]
+license = {text = "MIT"}  # or your preferred license
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+dependencies = [
+    "igraph",
+    "louvain",
+    "scanpy",
+    "anndata",
+    "numpy",
+    "pandas",
+    "hotspotsc",
+    "scikit-learn",
+    "scipy",
+    "annoy",
+    "tqdm",
+    "importlib_resources; python_version < '3.9'",
+]
+
+[project.urls]
+homepage = "https://github.com/abelson-lab/ITHmapper"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"ITHmapper" = [
+    "reference_modules/*.csv",
+    "reference_modules/*.json",
+    "reference_modules/consensus_mean_exp_mat/*.tsv"
+]
+
+# If you want a CLI:
+#[project.scripts]
+#run-mapping-pipeline = "ITHmapper.cli:main"
