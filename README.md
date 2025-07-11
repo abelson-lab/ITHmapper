@@ -18,52 +18,33 @@ A Python pipeline for **mapping scRNA-seq query cells to reference cell states**
 
 ## Installation
 
-1. Clone the repository:
+Install with pip, we strongly recommend to use a new virtual environment:
 
    ```bash
-   git clone https://github.com/abelsonlab/ITHmapper.git
-   cd ITHmapper
+   pip install --upgrade pip setuptools wheel
+   pip install ITHmapper
    ```
 
-2. Install with pip (recommended for development):
 
-   ```bash
-   pip install .
-   ```
-
-   (Requires Python 3.7+)
-
----
 
 ## Dependencies
 
-- `louvain`
-- `igraph`
-- `scanpy`
-- `anndata`
-- `numpy`
-- `pandas`
-- `hotspotsc`
-- `scikit-learn`
-- `scipy`
-- `annoy`
-- `tqdm`
-- `importlib_resources` (for Python <3.9)
-
-All required dependencies are specified in `pyproject.toml` or `setup.py`.
+All required dependencies are specified in `pyproject.toml`
 
 ---
 
 ## Quick Start
 
-ITHmapper requires an adata file with raw counts in adata.layers["counts"].
+**Input format:**
+ITHmapper requires an AnnData object with raw counts in adata.layers["counts"].
 Addionally the adata.var.index must be ensembl gene IDs without version (eg. ENSG00000186827, not ENSG00000186827.1).
-ITHmapper also calculates HVGs internally, please provide an unfiltered adata file with all genes.
-It is okay if HVGs were previously calculated, these will get ignored by the pipeline.
-ITHmapper also requires either an scvi or pca embedding of the cells for the Hotspot scoring. 
+Additionally, please ensure the adata file has all genes and not only HVGs.
+ITHmapper also requires either an scvi or pca embedding of the cells for the Hotspot scoring.
+For single dataset/batch samples we recommend using PCA while for samples from many datasets we recommend scVI.
 Ignore the "adata.X seems to be already log-transformed." warning if the input adata was already transformed, ITHmapper is still using the raw counts and re-transforming them, see [scanpy issue](https://github.com/scverse/scanpy/issues/1333).
+
 **Cancer types**
-ITHmapper will work with the following cancer_type parameters:
+ITHmapper will work with the following cancer_type parameters, currently other cancer types are not supported:
 
 'Bladder', 'Breast', 'Colorectal', 'Gastric',
 'Kidney_RCC', 'Liver_CHOL', 'Liver_HCC', 'Lung_LUAD',
