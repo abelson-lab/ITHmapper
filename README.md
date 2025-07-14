@@ -21,7 +21,7 @@ A Python pipeline for **mapping scRNA-seq query cells to reference cell states**
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/abelsonlab/ITHmapper.git
+   git clone https://github.com/abelson-lab/ITHmapper.git
    cd ITHmapper
    ```
 
