@@ -119,7 +119,7 @@ def score_reference_hotspot_modules(
         module_PCA_attributes_saved = pickle.load(f)
 
     # Calculate module scores
-    np.random.seed(seed_use)
+    np.random.seed(seed)
     modules_to_compute = sorted([x for x in hs.modules.unique() if x != -1])
     print("Computing scores for {} modules...".format(len(modules_to_compute)))
 
