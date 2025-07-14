@@ -142,7 +142,7 @@ def score_reference_hotspot_modules(
     
     module_scores = pd.DataFrame(module_scores)
     #append "___module" to each column name
-    module_scores.columns = module_scores.columns + "___module"
+    module_scores.columns = [str(col) + '___module' for col in module_scores.columns]
     # Set index to cell names
     module_scores.index = hs.adata.obs_names
     adata_rep.obs = adata_rep.obs.join(module_scores)
