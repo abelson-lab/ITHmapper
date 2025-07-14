@@ -24,11 +24,11 @@ def merge_hotspot_module_scores_over_seeds(
         # Extract only module score columns: assume these are not present in original obs
         # Exclude any metadata columns you don't want (e.g., obs columns from input)
         adata_scored.obs.columns = adata_scored.obs.columns.astype(str)
-        module_cols = [col for col in adata_scored.obs.columns if col.endswith('.0')]
+        module_cols = [col for col in adata_scored.obs.columns if col.endswith('___module')]
         scores_per_cell = adata_scored.obs[module_cols].copy()
         # Rename columns to include seed
         scores_per_cell.columns = [
-            f"seed___{seed}___cancer_cell_module_{col}".replace(".0", "") for col in scores_per_cell.columns
+            f"seed___{seed}___cancer_cell_module_{col}".replace("___module", "") for col in scores_per_cell.columns
         ]
         # Add cell index if not present
         scores_per_cell.index.name = 'cell'
