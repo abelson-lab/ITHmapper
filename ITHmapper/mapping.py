@@ -26,6 +26,7 @@ import scanpy as sc
 import hotspot
 from anndata import AnnData
 from typing import Optional
+import pickle
 
 def score_reference_hotspot_modules(
     adata: AnnData,
@@ -112,15 +113,68 @@ def score_reference_hotspot_modules(
     module_cancer_res = module_cancer_res.loc[list(index_keep)]
     hs.modules = module_cancer_res
     
+    # Load attributes (once)
+    with open(f"reference_modules/PCA_references/pca_projection_attributes_seed_{seed}_{cancer_type}.pkl", "rb") as f:
+        module_PCA_attributes_saved = pickle.load(f)
+
     # Calculate module scores
-    module_scores_cancer_query = hs.calculate_module_scores()
-    adata_rep.obs = adata_rep.obs.join(module_scores_cancer_query)
+    np.random.seed(seed_use)
+    modules_to_compute = sorted([x for x in hs.modules.unique() if x != -1])
+    print("Computing scores for {} modules...".format(len(modules_to_compute)))
+
+    module_scores = {}
+    for module, info in module_PCA_attributes_saved.items():
+        module_genes = info["genes"]
+        pca_attrs = info["pca_attrs"]
+        counts_dense = hs._counts_from_anndata(
+                hs.adata[:, module_genes], hs.layer_key, dense=True
+            )
+        scores = score_query_modules(
+            counts_dense,
+            hs.model,
+            hs.umi_counts.values,
+            hs.neighbors.values,
+            hs.weights.values,
+            pca_attrs
+        )
+        module_scores[module] = scores
+    
+    module_scores = pd.DataFrame(module_scores)
+    module_scores.index = hs.adata.obs_names
+    adata_rep.obs = adata_rep.obs.join(module_scores)
     
     # Optionally save
     if output_csv is not None:
         adata_rep.obs.to_csv(output_csv)
     
     return adata_rep
+
+
+from sklearn.decomposition import PCA
+
+def score_query_modules(
+        counts_sub, model, num_umi, neighbors, weights, pca_attrs):
+    """
+    counts_sub: row-subset of counts matrix with genes in the module
+    """
+    cc_smooth = np.zeros_like(counts_sub, dtype=np.float64)
+    for i in range(counts_sub.shape[0]):
+        counts_row = counts_sub[i, :]
+        centered_row = create_centered_counts_row(counts_row, model, num_umi)
+        smooth_row = neighbor_smoothing_row(
+            centered_row, neighbors, weights, _lambda=.9)
+        cc_smooth[i] = smooth_row
+    pca_data = cc_smooth
+    model = PCA(n_components=1)
+    for k, v in pca_attrs.items():
+        setattr(model, k, v)
+    scores = model.transform(pca_data.T)
+    sign = model.components_.mean()  # may need to flip
+    if sign < 0:
+        scores = scores * -1
+    scores = scores[:, 0]
+    return scores
+
 
 
 import importlib.resources
