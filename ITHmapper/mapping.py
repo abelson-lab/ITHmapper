@@ -26,6 +26,7 @@ import scanpy as sc
 import hotspot
 from anndata import AnnData
 from typing import Optional
+import importlib.resources
 import pickle
 
 def score_reference_hotspot_modules(
@@ -114,7 +115,7 @@ def score_reference_hotspot_modules(
     hs.modules = module_cancer_res
     
     # Load attributes (once)
-    with open(f"reference_modules/PCA_references/pca_projection_attributes_seed_{seed}_{cancer_type}.pkl", "rb") as f:
+    with importlib.resources.files(package_name).joinpath(f"reference_modules/PCA_references/pca_projection_attributes_seed_{seed}_{cancer_type}.pkl").open("rb") as f:
         module_PCA_attributes_saved = pickle.load(f)
 
     # Calculate module scores
