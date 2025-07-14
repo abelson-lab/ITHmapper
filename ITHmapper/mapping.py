@@ -127,7 +127,13 @@ def score_reference_hotspot_modules(
     for module, info in module_PCA_attributes_saved.items():
         module_genes = info["genes"]
         pca_attrs = info["pca_attrs"]
-        counts_dense = hs._counts_from_anndata(
+        overlapping = [g for g in module_genes if g in set(hs.adata.var_names)]
+        if len(overlapping) < len(module_genes):
+            counts_dense = hs._counts_from_anndata(
+                hs.adata[:, overlapping], hs.layer_key, dense=True
+            )
+        else:
+            counts_dense = hs._counts_from_anndata(
                 hs.adata[:, module_genes], hs.layer_key, dense=True
             )
         scores = score_query_modules(
@@ -136,7 +142,10 @@ def score_reference_hotspot_modules(
             hs.umi_counts.values,
             hs.neighbors.values,
             hs.weights.values,
-            pca_attrs
+            pca_attrs,
+            overlapping=overlapping,
+            module_genes=module_genes,
+            cells=hs.adata.obs_names
         )
         module_scores[module] = scores
     
@@ -159,7 +168,7 @@ from hotspot.local_stats_pairs import create_centered_counts_row
 from hotspot.utils import neighbor_smoothing_row
 
 def score_query_modules(
-        counts_sub, model, num_umi, neighbors, weights, pca_attrs):
+        counts_sub, model, num_umi, neighbors, weights, pca_attrs, overlapping, module_genes, cells):
     """
     counts_sub: row-subset of counts matrix with genes in the module
     """
@@ -171,6 +180,10 @@ def score_query_modules(
             centered_row, neighbors, weights, _lambda=.9)
         cc_smooth[i] = smooth_row
     pca_data = cc_smooth
+    #check if overlapping is less than module_genes
+    if len(overlapping) < len(module_genes):
+        pca_data_dense = pd.DataFrame(pca_data, index=overlapping, columns=cells)
+        pca_data = prepare_pca_query_matrix(pca_data_dense.T, pca_attrs, module_genes)
     model = PCA(n_components=1)
     for k, v in pca_attrs.items():
         setattr(model, k, v)
@@ -182,6 +195,33 @@ def score_query_modules(
     return scores
 
 
+def prepare_pca_query_matrix(query_counts, pca_attrs, module_genes):
+    """
+    Given query_counts (cells x genes), fill in missing genes with reference means and order as PCA expects.
+    - query_counts: numpy array (cells x genes_in_query)
+    - pca_attrs: dict of PCA attributes, must include 'mean_' and list of gene names in original fit order.
+    - module_genes: list of gene names expected by PCA, in order
+    Returns:
+        numpy array (cells x genes_in_pca_order)
+    """
+    import numpy as np
+
+    # Assume query_counts is a DataFrame with columns = gene names in query
+    # pca_attrs["genes"] should be the original list of genes used in PCA (i.e. module_genes)
+    # pca_attrs["mean_"] is a vector aligned to module_genes
+
+    # Find missing genes
+    query_gene_set = set(query_counts.columns)
+    missing_genes = [g for g in module_genes if g not in query_gene_set]
+
+    # Fill missing genes with PCA means
+    for i, g in enumerate(missing_genes):
+        mean_val = pca_attrs["mean_"][module_genes.index(g)]
+        query_counts[g] = mean_val
+
+    # Reorder columns to match module_genes order
+    query_counts = query_counts[module_genes]
+    return query_counts.T.values  # or .to_numpy()
 
 import importlib.resources
 import pandas as pd
