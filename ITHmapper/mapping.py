@@ -152,6 +152,8 @@ def score_reference_hotspot_modules(
 
 
 from sklearn.decomposition import PCA
+from hotspot.local_stats_pairs import create_centered_counts_row
+from hotspot.utils import neighbor_smoothing_row
 
 def score_query_modules(
         counts_sub, model, num_umi, neighbors, weights, pca_attrs):
