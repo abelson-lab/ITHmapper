@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ITHmapper"
-version = "0.1.2"
+version = "0.1.3"
 description = "A pipeline for mapping scRNA-seq query cells to reference cell states using Hotspot, meta-modules, and consensus profiles."
 readme = "README.md"
 requires-python = ">=3.7"
