@@ -45,4 +45,5 @@ Issues = "https://github.com/abelson-lab/ITHmapper/issues"
 [tool.hatch.build]
 include = [
   "ITHmapper/reference_modules/**/*"
+  "ITHmapper/*.py"
 ]
