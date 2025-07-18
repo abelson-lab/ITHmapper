@@ -49,10 +49,10 @@ ITHmapper will work with the following cancer_type parameters, currently other c
 
 ```python
 
-print(['Bladder', 'Brain', 'Breast', 'Colorectal', 'Gastric',
+'Bladder', 'Brain', 'Breast', 'Colorectal', 'Gastric',
 'Kidney_RCC', 'Liver_HCC', 'Lung_LUAD',
 'Neuroblastoma', 'Ovarian_HGSOC',
-'Pancreas', 'Prostate'])
+'Pancreas', 'Prostate'
 
 ```
 
