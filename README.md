@@ -47,7 +47,7 @@ Ignore the "adata.X seems to be already log-transformed." warning if the input a
 **Cancer types**
 ITHmapper will work with the following cancer_type parameters, currently other cancer types are not supported:
 
-'Bladder', 'Brain','Breast', 'Colorectal', 'Gastric',
+'Bladder', 'Brain', 'Breast', 'Colorectal', 'Gastric',
 'Kidney_RCC', 'Liver_CHOL', 'Liver_HCC', 'Lung_LUAD',
 'Lung_LUSC', 'Lung_SCC', 'Neuroblastoma', 'Ovarian_HGSOC',
 'Pancreas', 'Prostate'

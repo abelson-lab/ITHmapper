@@ -153,6 +153,8 @@ def load_consensus_mean_exp_mat(
     
     if cancer_type == "Bladder":
         cancer_type_TCGA = "Bladder_BLCA"
+    elif cancer_type == "Brain":
+        cancer_type_TCGA = "Brain_GBM"
     elif cancer_type == "Breast":
         cancer_type_TCGA = "Breast_BRCA"
     elif cancer_type == "Colorectal":
