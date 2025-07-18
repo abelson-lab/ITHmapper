@@ -29,7 +29,7 @@ def map_query_to_reference_cell_states(
         Input AnnData object (filtered to query cells, embedding computed).
     cancer_type : str
         Cancer type string for mapping, must be one of:
-        'Bladder', 'Breast', 'Colorectal', 'Gastric',
+        'Bladder', 'Brain','Breast', 'Colorectal', 'Gastric',
         'Kidney_RCC', 'Liver_CHOL', 'Liver_HCC', 'Lung_LUAD',
         'Lung_LUSC', 'Lung_SCC', 'Neuroblastoma', 'Ovarian_HGSOC',
         'Pancreas', 'Prostate'.
@@ -64,7 +64,7 @@ def map_query_to_reference_cell_states(
     # 'Neuroblastoma', 'Ovarian_HGSOC', 'Pancreas', 'Prostate'
     # check and provide error if cancer_type is not in the list
     valid_cancer_types = [
-        'Bladder', 'Breast', 'Colorectal', 'Gastric',
+        'Bladder', 'Brain','Breast', 'Colorectal', 'Gastric',
         'Kidney_RCC', 'Liver_CHOL', 'Liver_HCC', 'Lung_LUAD',
         'Lung_LUSC', 'Lung_SCC', 'Neuroblastoma', 'Ovarian_HGSOC',
         'Pancreas', 'Prostate'
