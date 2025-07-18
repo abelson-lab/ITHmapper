@@ -163,16 +163,10 @@ def load_consensus_mean_exp_mat(
         cancer_type_TCGA = "Gastric_STAD"
     elif cancer_type == "Kidney_RCC":
         cancer_type_TCGA = "Kidney_RCC_KIRC"
-    elif cancer_type == "Liver_CHOL":
-        cancer_type_TCGA = "Liver_CHOL_CHOL"
     elif cancer_type == "Liver_HCC":
         cancer_type_TCGA = "Liver_HCC_LIHC"
     elif cancer_type == "Lung_LUAD":
         cancer_type_TCGA = "Lung_LUAD_LUAD"
-    elif cancer_type == "Lung_LUSC":
-        cancer_type_TCGA = "Lung_LUSC_LUSC"
-    elif cancer_type == "Lung_SCC": 
-        cancer_type_TCGA = "Lung_SCC_LUSC"
     elif cancer_type == "Neuroblastoma":
         cancer_type_TCGA = "Neuroblastoma_TARGET-NBL"
     elif cancer_type == "Ovarian_HGSOC":
