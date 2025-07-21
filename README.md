@@ -1,4 +1,4 @@
-![ITHmapper logo](img/ITHmapper_logo.png)
+<img src="img/ITHmapper_logo.png" alt="ITHmapper logo" width="240"/>
 
 # ITHmapper
 
