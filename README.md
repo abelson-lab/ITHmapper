@@ -1,8 +1,9 @@
-<img src="img/ITHmapper_logo.png" alt="ITHmapper logo" width="240"/>
 
 # ITHmapper
 
-A Python pipeline for **mapping scRNA-seq query cells to reference cell states** using Hotspot module scoring, meta-module aggregation, consensus state assignment, and cell filtering by clustering quality.
+| <img src="img/ITHmapper_logo.png" width="240"/> | A Python pipeline for **mapping scRNA-seq query cells to reference cell states** using Hotspot module scoring, meta-module aggregation, consensus state assignment, and cell filtering by clustering quality.|
+
+
 
 ---
 
