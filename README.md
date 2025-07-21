@@ -1,3 +1,4 @@
+![ITHmapper logo](img/ITHmapper_logo.png)
 
 # ITHmapper
 
