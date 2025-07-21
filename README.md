@@ -1,7 +1,9 @@
 
 # ITHmapper
 
-<img src="img/ITHmapper_logo.png" height="240"/>
+<p align="center">
+    <img src="img/ITHmapper_logo.png" height="240" alt="ITHmapper logo showing stylized interconnected cells forming a network, with vibrant colors suggesting diversity and collaboration, set against a clean white background. The mood is scientific and innovative." />
+</p>
 
 A Python pipeline for **mapping scRNA-seq query cells to reference cell states** using Hotspot module scoring, meta-module aggregation, consensus state assignment, and cell filtering by clustering quality.
 
