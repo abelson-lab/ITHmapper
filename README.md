@@ -50,6 +50,7 @@ For single dataset/batch samples we recommend using PCA while for samples from m
 Ignore the "adata.X seems to be already log-transformed." warning if the input adata was already transformed, ITHmapper is still using the raw counts and re-transforming them, see [scanpy issue](https://github.com/scverse/scanpy/issues/1333).
 
 **Cancer types**
+Only run ITHmapper on one cancer type at a time.
 ITHmapper will work with the following cancer_type parameters, currently other cancer types are not supported:
 
 ```python
