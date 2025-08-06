@@ -28,7 +28,7 @@ Breast,cancer_state_2_0.4,Hypoxic Inflammatory Hormone,Androgen Signaling_Kerati
 Breast,cancer_state_21_0.9,Starvation Translation-Active,Proteostasis_Translation_Starvation
 Breast,cancer_state_24_0.6,Interferon-Activated Immune,Immune_Inflammatory_Interferon
 Breast,cancer_state_3_0.3,Proliferative III,Cell Cycle_Proliferative
-Breast,cancer_state_4_0.2,Estrogen NF-κB-Active,Androgen Signaling_Keratinization
+Breast,cancer_state_4_0.2,Estrogen NF-kB-Active,Androgen Signaling_Keratinization
 Breast,cancer_state_4_0.3,Estrogen Lipid-Metabolic,Metabolism of Macromolecules_Xenobiotic Detoxification
 Breast,cancer_state_5_0.2,OXPHOS-High Stress,Proteostasis_Translation_Starvation
 Breast,cancer_state_5_0.3,OXPHOS Translation-High,OXPHOS-Proteostasis_Stress-Adaptive
@@ -97,12 +97,12 @@ Ovarian_HGSOC,cancer_state_25_0.8,Inflammatory ECM,EMT_Mesenchymal_ECM Remodelin
 Ovarian_HGSOC,cancer_state_3_0.1,Proliferative III,Cell Cycle_Proliferative
 Ovarian_HGSOC,cancer_state_3_0.5,Translational Stress-Active,Proteostasis_Translation_Starvation
 Ovarian_HGSOC,cancer_state_3_0.6,Interferon Immune-Active,Immune_Inflammatory_Interferon
-Ovarian_HGSOC,cancer_state_5_0.4,Inflammatory KRAS NF-κB,Inflammatory_EMT_KRAS Signaling
+Ovarian_HGSOC,cancer_state_5_0.4,Inflammatory KRAS NF-kB,Inflammatory_EMT_KRAS Signaling
 Ovarian_HGSOC,cancer_state_6_0.3,Protein Synthesis Active,Proteostasis_Translation_Starvation
 Ovarian_HGSOC,cancer_state_6_0.4,rRNA Translation-High,Proteostasis_Translation_Starvation
 Ovarian_HGSOC,cancer_state_7_0.3,Interferon OXPHOS,Immune_Inflammatory_Interferon
 Ovarian_HGSOC,cancer_state_7_0.6,Proliferative IV,Cell Cycle_Proliferative
-Ovarian_HGSOC,cancer_state_8_0.5,NF-κB Junctional,Cell Junctions_RTK Signaling_ECM Organization
+Ovarian_HGSOC,cancer_state_8_0.5,NF-kB Junctional,Cell Junctions_RTK Signaling_ECM Organization
 Kidney_RCC,cancer_state_0_0.1,Translation-High Stress,Proteostasis_Translation_Starvation
 Kidney_RCC,cancer_state_1_0.1,Coagulative EMT,EMT_Mesenchymal_ECM Remodeling
 Kidney_RCC,cancer_state_1_0.3,ECM Stress-Response,EMT_Mesenchymal_ECM Remodeling
@@ -155,14 +155,14 @@ Lung_LUAD,cancer_state_0_0.4,Proliferative OXPHOS-High,OXPHOS-Proteostasis_Stres
 Lung_LUAD,cancer_state_0_0.7,MHC-II Ciliated Metabolic,Differentiation_Lineage Specific
 Lung_LUAD,cancer_state_0_0.9,Proteasome-High Stress Reponsive,OXPHOS-Proteostasis_Stress-Adaptive
 Lung_LUAD,cancer_state_12_0.7,Interferon ECM-Remodeling,Glycosylation_Complement_Metabolic
-Lung_LUAD,cancer_state_12_0.9,NFκB Translation Stress,Inflammatory_Stress_P53-Apoptosis
+Lung_LUAD,cancer_state_12_0.9,NFkB Translation Stress,Inflammatory_Stress_P53-Apoptosis
 Lung_LUAD,cancer_state_2_0.3,Hypoxia Glycolytic EMT I,Glycolytic_Hypoxic Metabolism
 Lung_LUAD,cancer_state_2_0.5,Hypoxia Glycolytic EMT II,Glycolytic_Hypoxic Metabolism
 Lung_LUAD,cancer_state_2_0.9,Proliferative,Cell Cycle_Proliferative
 Lung_LUAD,cancer_state_3_0.9,Interferon EMT Fibrotic,EMT_Mesenchymal_ECM Remodeling
 Lung_LUAD,cancer_state_7_0.4,Keratinized Squamous,Androgen Signaling_Keratinization
 Lung_LUAD,cancer_state_7_0.6,MYC OXPHOS,OXPHOS-Proteostasis_Stress-Adaptive
-Lung_LUAD,cancer_state_8_0.7,NF-κB Stress-Response,Inflammatory_Stress_P53-Apoptosis
+Lung_LUAD,cancer_state_8_0.7,NF-kB Stress-Response,Inflammatory_Stress_P53-Apoptosis
 Lung_LUAD,cancer_state_9_0.2,Alveolar OXPHOS-High,OXPHOS-Proteostasis_Stress-Adaptive
 Neuroblastoma,cancer_state_0_0.1,Proliferative OXPHOS Stress,Cell Cycle_Proliferative
 Neuroblastoma,cancer_state_1_0.1,Synaptic Differentiated,Neuronal_Neuroendocrine
@@ -238,7 +238,7 @@ Colorectal_READ,cancer_state_7_0.9,Apoptotic Stress,Inflammatory_Stress_P53-Apop
 Colorectal_READ,cancer_state_8_0.6,OXPHOS Proliferative,Cell Cycle_Proliferative
 Colorectal_READ,cancer_state_9_0.6,Collagen ECM Remodeling,EMT_Mesenchymal_ECM Remodeling
 Gastric,cancer_state_1_0.1,Proteostasis Stress I,Proteostasis_Translation_Starvation
-Gastric,cancer_state_10_0.9,NF-κB Inflammatory,Immune_Inflammatory_Interferon
+Gastric,cancer_state_10_0.9,NF-kB Inflammatory,Immune_Inflammatory_Interferon
 Gastric,cancer_state_12_1,Proliferative I,Cell Cycle_Proliferative
 Gastric,cancer_state_13_0.5,Complement Glycosylation,Glycosylation_Complement_Metabolic
 Gastric,cancer_state_13_0.9,Epigenetic Hormone Signaling,Epigenetics_Genome Instability_DNA Repair
