@@ -74,10 +74,6 @@ def score_reference_hotspot_modules(
     if "counts" not in adata_rep.layers:
         raise ValueError("Input AnnData must contain a 'counts' layer with raw counts data.")
     
-    # Set counts_csc layer as required by Hotspot
-    if "counts_csc" not in adata_rep.layers:
-        adata_rep.layers["counts_csc"] = adata_rep.layers["counts"].tocsc()
-    
     #check if embedding_key is in obsm
     if embedding_key not in adata_rep.obsm:
         raise ValueError(f"Embedding key '{embedding_key}' not found in adata.obsm. Please compute the scvi or pca embedding first.")
@@ -98,7 +94,7 @@ def score_reference_hotspot_modules(
     np.random.seed(seed)
     hs = hotspot.Hotspot(
         adata_rep,
-        layer_key="counts_csc",
+        layer_key="counts",
         model='danb',
         latent_obsm_key=embedding_key,
         umi_counts_obs_key=umi_counts_obs_key
@@ -253,6 +249,8 @@ def load_consensus_mean_exp_mat(
     
     if cancer_type == "Bladder":
         cancer_type_TCGA = "Bladder_BLCA"
+    elif cancer_type == "Brain":
+        cancer_type_TCGA = "Brain_GBM"
     elif cancer_type == "Breast":
         cancer_type_TCGA = "Breast_BRCA"
     elif cancer_type == "Colorectal":
@@ -261,16 +259,10 @@ def load_consensus_mean_exp_mat(
         cancer_type_TCGA = "Gastric_STAD"
     elif cancer_type == "Kidney_RCC":
         cancer_type_TCGA = "Kidney_RCC_KIRC"
-    elif cancer_type == "Liver_CHOL":
-        cancer_type_TCGA = "Liver_CHOL_CHOL"
     elif cancer_type == "Liver_HCC":
         cancer_type_TCGA = "Liver_HCC_LIHC"
     elif cancer_type == "Lung_LUAD":
         cancer_type_TCGA = "Lung_LUAD_LUAD"
-    elif cancer_type == "Lung_LUSC":
-        cancer_type_TCGA = "Lung_LUSC_LUSC"
-    elif cancer_type == "Lung_SCC": 
-        cancer_type_TCGA = "Lung_SCC_LUSC"
     elif cancer_type == "Neuroblastoma":
         cancer_type_TCGA = "Neuroblastoma_TARGET-NBL"
     elif cancer_type == "Ovarian_HGSOC":
@@ -344,16 +336,18 @@ def map_cells_to_consensus_states(
     min_distance_state = consensus_mean_exp_mat.index[np.argmin(dist_centroids, axis=1)]
 
     # Add to AnnData
-    adata.obs['cancer_state'] = min_distance_state
+    adata.obs['min_distance_state'] = min_distance_state
     with importlib.resources.files("ITHmapper").joinpath("reference_modules/data_for_cell_state_dict.csv").open("r") as f:
         mapping_df = pd.read_csv(f)
     # You may need to adjust column names here if not auto-detected:
-    mapping_df.columns = ['cancer_type', 'original_label', 'new_label']
+    mapping_df.columns = ['cancer_type', 'original_label', 'new_label', 'Program Category']
     # Filter to correct cancer type
     mapping_df = mapping_df[mapping_df['cancer_type'] == cancer_type]
     mapping_dict = dict(zip(mapping_df['original_label'], mapping_df['new_label']))
     # Map each cell's label
-    adata.obs['cancer_state'] = adata.obs['cancer_state'].map(mapping_dict).fillna(adata.obs['cancer_state'])
+    adata.obs['cancer_state'] = adata.obs['min_distance_state'].map(mapping_dict).fillna(adata.obs['min_distance_state'])
+    mapping_dict_prog_type = dict(zip(mapping_df['original_label'], mapping_df['Program Category']))
+    adata.obs['program_type'] = adata.obs['min_distance_state'].map(mapping_dict_prog_type).fillna(adata.obs['min_distance_state'])
     if flag_cells:
         # Flag cells with silhouette < filter_silhouette
         unclear_cells = adata.obs['max_sil_score'] < filter_silhouette

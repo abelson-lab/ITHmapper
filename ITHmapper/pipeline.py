@@ -29,9 +29,9 @@ def map_query_to_reference_cell_states(
         Input AnnData object (filtered to query cells, embedding computed).
     cancer_type : str
         Cancer type string for mapping, must be one of:
-        'Bladder', 'Breast', 'Colorectal', 'Gastric',
-        'Kidney_RCC', 'Liver_CHOL', 'Liver_HCC', 'Lung_LUAD',
-        'Lung_LUSC', 'Lung_SCC', 'Neuroblastoma', 'Ovarian_HGSOC',
+        'Bladder', 'Brain','Breast', 'Colorectal', 'Gastric',
+        'Kidney_RCC', 'Liver_HCC', 'Lung_LUAD',
+        'Neuroblastoma', 'Ovarian_HGSOC',
         'Pancreas', 'Prostate'.
     package_name : str
         Package name for meta-modules and module reference data.
@@ -60,13 +60,13 @@ def map_query_to_reference_cell_states(
     """
 
     ##cancer_type can be:
-    # 'Bladder', 'Breast', 'Colorectal', 'Gastric', 'Kidney', 'Liver_CHOL', 'Liver_HCC','Lung_LUAD','Lung_LUSC', 'Lung_SCC',
+    # 'Bladder', 'Brain', 'Breast', 'Colorectal', 'Gastric', 'Kidney', 'Liver_HCC','Lung_LUAD',
     # 'Neuroblastoma', 'Ovarian_HGSOC', 'Pancreas', 'Prostate'
     # check and provide error if cancer_type is not in the list
     valid_cancer_types = [
-        'Bladder', 'Breast', 'Colorectal', 'Gastric',
-        'Kidney_RCC', 'Liver_CHOL', 'Liver_HCC', 'Lung_LUAD',
-        'Lung_LUSC', 'Lung_SCC', 'Neuroblastoma', 'Ovarian_HGSOC',
+        'Bladder', 'Brain','Breast', 'Colorectal', 'Gastric',
+        'Kidney_RCC','Liver_HCC', 'Lung_LUAD',
+        'Neuroblastoma', 'Ovarian_HGSOC',
         'Pancreas', 'Prostate'
     ]
     if cancer_type not in valid_cancer_types:
