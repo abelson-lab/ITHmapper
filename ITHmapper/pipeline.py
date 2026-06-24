@@ -14,7 +14,7 @@ def map_query_to_reference_cell_states(
     embedding_key: str = "X_scVI",
     k_param: int = 20,
     seeds_use = range(1, 11),
-    flag_cells : bool = True,
+    flag_cells : bool = False,
     filter_silhouette: float = 0.2,
     resolutions = np.linspace(0.1, 1.0, 10),
     umi_counts_obs_key = "nCount_RNA",
