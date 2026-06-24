@@ -84,8 +84,7 @@ def score_reference_hotspot_modules(
         original_median_counts = np.loadtxt(f)
 
     original_median_counts = int(np.median(original_median_counts))
-    raw_total_counts = np.array(adata_rep.X.sum(axis=1)).flatten()
-    adata_rep.X = (adata_rep.X.T / raw_total_counts).T * original_median_counts
+    sc.pp.normalize_total(adata_rep, target_sum=original_median_counts)
     sc.pp.log1p(adata_rep)
     # Load reference modules
     from .mapping import load_reference_module  # If in same module
