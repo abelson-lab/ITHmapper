@@ -79,7 +79,10 @@ def score_reference_hotspot_modules(
         raise ValueError(f"Embedding key '{embedding_key}' not found in adata.obsm. Please compute the scvi or pca embedding first.")
     # Normalize, log1p, HVG selection
     adata_rep.X = adata_rep.layers["counts"].copy()
-    original_median_counts = np.loadtxt(f"reference_modules/median_counts/original_median_counts__{cancer_type}.txt")
+    file_median = f"reference_modules/seed_{seed}early_stopping_fresh_hotspot_scvi_modules_results_{cancer_type}.csv"
+    with importlib.resources.files("ITHmapper").joinpath(file_median).open('r') as f:
+        original_median_counts = np.loadtxt(f"reference_modules/median_counts/original_median_counts__{cancer_type}.txt")
+
     original_median_counts = int(np.median(original_median_counts))
     raw_total_counts = np.array(adata_rep.X.sum(axis=1)).flatten()
     adata_rep.X = (adata_rep.X.T / raw_total_counts).T * original_median_counts
