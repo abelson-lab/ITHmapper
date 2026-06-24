@@ -92,7 +92,7 @@ def score_reference_hotspot_modules(
     #keep genes that are in module_cancer_res or adata_rep.var.highly_variable
     adata_rep.var['module_gene'] = adata_rep.var.index.isin(module_cancer_res.index)
     adata_rep = adata_rep[:, adata_rep.var['module_gene']].copy()
-    #sc.pp.filter_genes(adata_rep, min_cells=3)
+    sc.pp.filter_genes(adata_rep, min_cells=3)
     
     # Run Hotspot
     np.random.seed(seed)
