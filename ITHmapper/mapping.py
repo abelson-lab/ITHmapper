@@ -79,16 +79,18 @@ def score_reference_hotspot_modules(
         raise ValueError(f"Embedding key '{embedding_key}' not found in adata.obsm. Please compute the scvi or pca embedding first.")
     # Normalize, log1p, HVG selection
     adata_rep.X = adata_rep.layers["counts"].copy()
-    sc.pp.normalize_total(adata_rep)
+    original_median_counts = np.loadtxt(f"reference_modules/original_median_counts__{cancer_type}.txt")
+    original_median_counts = int(np.median(original_median_counts))
+    raw_total_counts = np.array(adata_rep.X.sum(axis=1)).flatten()
+    adata_rep.X = (adata_rep.X.T / raw_total_counts).T * original_median_counts
     sc.pp.log1p(adata_rep)
-    sc.pp.highly_variable_genes(adata_rep, n_top_genes=2000)
     # Load reference modules
     from .mapping import load_reference_module  # If in same module
     module_cancer_res = load_reference_module(seed, cancer_type, package_name=package_name)
     #keep genes that are in module_cancer_res or adata_rep.var.highly_variable
     adata_rep.var['module_gene'] = adata_rep.var.index.isin(module_cancer_res.index)
-    adata_rep = adata_rep[:, adata_rep.var['module_gene'] | adata_rep.var['highly_variable']].copy()
-    sc.pp.filter_genes(adata_rep, min_cells=3)
+    adata_rep = adata_rep[:, adata_rep.var['module_gene']].copy()
+    #sc.pp.filter_genes(adata_rep, min_cells=3)
     
     # Run Hotspot
     np.random.seed(seed)
@@ -124,10 +126,15 @@ def score_reference_hotspot_modules(
         module_genes = info["genes"]
         pca_attrs = info["pca_attrs"]
         overlapping = [g for g in module_genes if g in set(hs.adata.var_names)]
+        missing = [g for g in module_genes if g not in set(hs.adata.var_names)]
         if len(overlapping) < len(module_genes):
             counts_dense = hs._counts_from_anndata(
                 hs.adata[:, overlapping], hs.layer_key, dense=True
             )
+            if missing:
+            # Create a zero-filled dataframe for missing genes and concat
+                zero_df = pd.DataFrame(0, index=hs.adata.obs_names, columns=missing)
+                hs.adata = ad.concat([hs.adata, ad.AnnData(zero_df)], axis=1)
         else:
             counts_dense = hs._counts_from_anndata(
                 hs.adata[:, module_genes], hs.layer_key, dense=True
