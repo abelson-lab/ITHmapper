@@ -2,3 +2,4 @@ recursive-include ITHmapper/reference_modules *.csv
 recursive-include ITHmapper/reference_modules *.json
 recursive-include ITHmapper/reference_modules/consensus_mean_exp_mat *.tsv
 recursive-include ITHmapper/reference_modules/PCA_references *.pkl
+recursive-include ITHmapper/reference_modules/median_counts *.txt
