@@ -28,6 +28,7 @@ from anndata import AnnData
 from typing import Optional
 import importlib.resources
 import pickle
+import anndata as ad
 
 def score_reference_hotspot_modules(
     adata: AnnData,
