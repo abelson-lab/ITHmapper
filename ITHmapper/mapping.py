@@ -134,12 +134,6 @@ def score_reference_hotspot_modules(
             counts_dense = hs._counts_from_anndata(
                 hs.adata[:, overlapping], hs.layer_key, dense=True
             )
-            n_cells = counts_dense.shape[0]
-            zero_arr = np.zeros((n_cells, len(missing)))
-            counts_dense = np.hstack([counts_dense, zero_arr])
-            current_genes = overlapping + missing
-            df_temp = pd.DataFrame(counts_dense, columns=current_genes)
-            counts_dense = df_temp[module_genes].values 
         else:
             counts_dense = hs._counts_from_anndata(
                 hs.adata[:, module_genes], hs.layer_key, dense=True
