@@ -169,6 +169,7 @@ from sklearn.decomposition import PCA
 from hotspot.local_stats_pairs import create_centered_counts_row
 from hotspot.utils import neighbor_smoothing_row
 
+
 def score_query_modules(
         counts_sub, model, num_umi, neighbors, weights, pca_attrs, overlapping, module_genes, cells):
     """
@@ -182,18 +183,28 @@ def score_query_modules(
             centered_row, neighbors, weights, _lambda=.9)
         cc_smooth[i] = smooth_row
     pca_data = cc_smooth
-    #check if overlapping is less than module_genes
+    
+    # Check if overlapping is less than module_genes
     if len(overlapping) < len(module_genes):
         pca_data_dense = pd.DataFrame(pca_data, index=overlapping, columns=cells)
         pca_data = prepare_pca_query_matrix(pca_data_dense.T, pca_attrs, module_genes)
-    model = PCA(n_components=1)
-    for k, v in pca_attrs.items():
-        setattr(model, k, v)
-    scores = model.transform(pca_data.T)
-    sign = model.components_.mean()  # may need to flip
+        X = pca_data.T
+    else:
+        X = pca_data.T  # shape (cells, genes)
+
+    # Extract the PCA parameters manually
+    mean = pca_attrs["mean_"]
+    components = pca_attrs["components_"]  # shape (1, genes)
+
+    # Perform the PCA projection manually (X - mean) @ components.T
+    scores = (X - mean) @ components.T  # shape (cells, 1)
+
+    # Apply the sign-flipping logic
+    sign = components.mean()  # may need to flip
     if sign < 0:
         scores = scores * -1
-    scores = scores[:, 0]
+        
+    scores = scores[:, 0]  # Flatten to a 1D array of shape (cells,)
     return scores
 
 
