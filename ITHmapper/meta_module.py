@@ -38,30 +38,28 @@ def compute_scaled_meta_module_scores_for_cancer_type(
     with importlib.resources.files(package_name).joinpath(scaling_filename).open("r") as f:
         reference_scaling = json.load(f)
 
-    # Compute mean of z-scored module columns per meta-module
+    # Compute mean of reference-scaled module columns per meta-module
     meta_scores = pd.DataFrame(index=merged_scores_per_cell.index)
     for meta_idx, module_cols in cell_state_dict.items():
-        # Only use columns that exist in the query DataFrame
+        # Only use columns that exist in the DataFrame
         cols_to_use = [col for col in module_cols if col in merged_scores_per_cell.columns]
         if cols_to_use:
-            # Create a copy to perform reference-based scaling safely
+            # Scaled using reference parameters instead of query statistics
             scaled = merged_scores_per_cell[cols_to_use].copy()
-            
             for col in cols_to_use:
-                # Use reference parameters if they exist, fallback to query if missing
                 if col in reference_scaling:
                     ref_mean = reference_scaling[col]["mean"]
                     ref_std = reference_scaling[col]["std"]
                 else:
-                    # Fallback to query statistics with a warning
+                    # Fallback to query statistics if missing
                     ref_mean = merged_scores_per_cell[col].mean()
                     ref_std = merged_scores_per_cell[col].std()
                 
-                # Apply static reference scaling
+                # Prevent division by zero if std is somehow 0
+                ref_std = max(ref_std, 1e-6)
                 scaled[col] = (scaled[col] - ref_mean) / ref_std
-                
+            
             meta_scores[f"{output_prefix}{meta_idx}_score"] = scaled.mean(axis=1)
         else:
             meta_scores[f"{output_prefix}{meta_idx}_score"] = float("nan")
-            
     return meta_scores

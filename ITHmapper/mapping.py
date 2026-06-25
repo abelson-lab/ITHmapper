@@ -338,11 +338,26 @@ def map_cells_to_consensus_states(
     """
     # Align meta_scores to cells in adata
     query_cells = adata.obs_names
-    fil_merged_scores = meta_scores.loc[query_cells]
+    fil_merged_scores = meta_scores.loc[query_cells].copy()
+    
+    # Clean up column names: "meta_module_0_score" -> "0"
     fil_merged_scores.columns = fil_merged_scores.columns.str.replace('^meta_module_', '', regex=True)
     fil_merged_scores.columns = fil_merged_scores.columns.str.replace('_score', '', regex=True)
-    # Ensure columns are in same order as consensus reference
+    fil_merged_scores.columns = fil_merged_scores.columns.astype(str)  # Force string type
+
+    # Force consensus matrix column names to string type
+    consensus_mean_exp_mat.columns = consensus_mean_exp_mat.columns.astype(str)
+
+    # Ensure columns are in the same order as consensus reference
     shared_cols = [c for c in consensus_mean_exp_mat.columns if c in fil_merged_scores.columns]
+    
+    if len(shared_cols) == 0:
+        raise ValueError(
+            f"No matching columns found between your query and consensus matrix.\n"
+            f"Query columns: {list(fil_merged_scores.columns)}\n"
+            f"Consensus columns: {list(consensus_mean_exp_mat.columns)}"
+        )
+
     fil_merged_scores = fil_merged_scores[shared_cols]
     consensus_mat = consensus_mean_exp_mat[shared_cols]
 
@@ -356,16 +371,15 @@ def map_cells_to_consensus_states(
     adata.obs['min_distance_state'] = min_distance_state
     with importlib.resources.files("ITHmapper").joinpath("reference_modules/data_for_cell_state_dict.csv").open("r") as f:
         mapping_df = pd.read_csv(f)
-    # You may need to adjust column names here if not auto-detected:
     mapping_df.columns = ['cancer_type', 'original_label', 'new_label', 'Program Category']
-    # Filter to correct cancer type
     mapping_df = mapping_df[mapping_df['cancer_type'] == cancer_type]
     mapping_dict = dict(zip(mapping_df['original_label'], mapping_df['new_label']))
+    
     # Map each cell's label
     adata.obs['cancer_state'] = adata.obs['min_distance_state'].map(mapping_dict).fillna(adata.obs['min_distance_state'])
     mapping_dict_prog_type = dict(zip(mapping_df['original_label'], mapping_df['Program Category']))
     adata.obs['program_type'] = adata.obs['min_distance_state'].map(mapping_dict_prog_type).fillna(adata.obs['min_distance_state'])
+    
     if flag_cells:
-        # Flag cells with silhouette < filter_silhouette
         unclear_cells = adata.obs['max_sil_score'] < filter_silhouette
         adata.obs.loc[unclear_cells, 'cancer_state'] = 'unclear'
