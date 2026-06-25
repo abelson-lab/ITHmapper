@@ -1,0 +1,1050 @@
+{
+    "seed___1___cancer_cell_module_1": {
+        "mean": -5.708603450746474e-17,
+        "std": 4.430861511552163
+    },
+    "seed___1___cancer_cell_module_2": {
+        "mean": -5.708603450746474e-17,
+        "std": 3.3557230107311016
+    },
+    "seed___1___cancer_cell_module_3": {
+        "mean": -1.1417206901492948e-16,
+        "std": 3.709152941122404
+    },
+    "seed___1___cancer_cell_module_4": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.6030639395199335
+    },
+    "seed___1___cancer_cell_module_5": {
+        "mean": 0.0,
+        "std": 3.4463199129347983
+    },
+    "seed___1___cancer_cell_module_6": {
+        "mean": 0.0,
+        "std": 2.938075230740429
+    },
+    "seed___1___cancer_cell_module_7": {
+        "mean": 5.708603450746474e-17,
+        "std": 3.4047706683808703
+    },
+    "seed___1___cancer_cell_module_8": {
+        "mean": 1.1417206901492948e-16,
+        "std": 4.3483533447727885
+    },
+    "seed___1___cancer_cell_module_9": {
+        "mean": 0.0,
+        "std": 2.2086230261943998
+    },
+    "seed___1___cancer_cell_module_10": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.3097762866709814
+    },
+    "seed___1___cancer_cell_module_11": {
+        "mean": 0.0,
+        "std": 1.8885645941312352
+    },
+    "seed___1___cancer_cell_module_12": {
+        "mean": 0.0,
+        "std": 1.5145235621387902
+    },
+    "seed___1___cancer_cell_module_13": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.8574107860899496
+    },
+    "seed___1___cancer_cell_module_14": {
+        "mean": 0.0,
+        "std": 1.7438081135804946
+    },
+    "seed___1___cancer_cell_module_15": {
+        "mean": 1.1417206901492948e-16,
+        "std": 1.9794954863665442
+    },
+    "seed___1___cancer_cell_module_16": {
+        "mean": 1.1417206901492948e-16,
+        "std": 2.0180115903979106
+    },
+    "seed___1___cancer_cell_module_17": {
+        "mean": 0.0,
+        "std": 1.7122441222966822
+    },
+    "seed___1___cancer_cell_module_18": {
+        "mean": 0.0,
+        "std": 1.3332798999552888
+    },
+    "seed___1___cancer_cell_module_19": {
+        "mean": 1.1417206901492948e-16,
+        "std": 1.1883062070647805
+    },
+    "seed___1___cancer_cell_module_20": {
+        "mean": -1.4271508626866185e-17,
+        "std": 0.9909115877739335
+    },
+    "seed___1___cancer_cell_module_21": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.2285281343871692
+    },
+    "seed___1___cancer_cell_module_22": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.6675197749333588
+    },
+    "seed___1___cancer_cell_module_23": {
+        "mean": 1.783938578358273e-18,
+        "std": 1.3942337922801094
+    },
+    "seed___1___cancer_cell_module_24": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.2869367445674929
+    },
+    "seed___1___cancer_cell_module_25": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.3779149569355216
+    },
+    "seed___1___cancer_cell_module_26": {
+        "mean": -5.708603450746474e-17,
+        "std": 1.5812271493723102
+    },
+    "seed___1___cancer_cell_module_27": {
+        "mean": -2.854301725373237e-17,
+        "std": 0.7405658930059187
+    },
+    "seed___1___cancer_cell_module_28": {
+        "mean": -4.2814525880598555e-17,
+        "std": 0.7161756129594938
+    },
+    "seed___1___cancer_cell_module_29": {
+        "mean": -8.919692891791365e-18,
+        "std": 0.5734854690584792
+    },
+    "seed___2___cancer_cell_module_1": {
+        "mean": 1.1417206901492948e-16,
+        "std": 4.353941092152465
+    },
+    "seed___2___cancer_cell_module_2": {
+        "mean": 0.0,
+        "std": 3.4746160780358353
+    },
+    "seed___2___cancer_cell_module_3": {
+        "mean": 0.0,
+        "std": 4.06492110983759
+    },
+    "seed___2___cancer_cell_module_4": {
+        "mean": -1.1417206901492948e-16,
+        "std": 3.7036177857214763
+    },
+    "seed___2___cancer_cell_module_5": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.5555916880714324
+    },
+    "seed___2___cancer_cell_module_6": {
+        "mean": 0.0,
+        "std": 3.0165237943938665
+    },
+    "seed___2___cancer_cell_module_7": {
+        "mean": 8.562905176119711e-17,
+        "std": 3.0304644835584322
+    },
+    "seed___2___cancer_cell_module_8": {
+        "mean": -1.1417206901492948e-16,
+        "std": 3.7604861787341237
+    },
+    "seed___2___cancer_cell_module_9": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.364141978864855
+    },
+    "seed___2___cancer_cell_module_10": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.9102235372315204
+    },
+    "seed___2___cancer_cell_module_11": {
+        "mean": -5.708603450746474e-17,
+        "std": 1.8878420075212343
+    },
+    "seed___2___cancer_cell_module_12": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.0109274153205994
+    },
+    "seed___2___cancer_cell_module_13": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.6494087531177466
+    },
+    "seed___2___cancer_cell_module_14": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.9082636304473812
+    },
+    "seed___2___cancer_cell_module_15": {
+        "mean": 0.0,
+        "std": 1.7962668129800212
+    },
+    "seed___2___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.9831221021863332
+    },
+    "seed___2___cancer_cell_module_17": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.704905275440896
+    },
+    "seed___2___cancer_cell_module_18": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.3052082754789982
+    },
+    "seed___2___cancer_cell_module_19": {
+        "mean": 2.1407262940299278e-17,
+        "std": 1.6153961858031083
+    },
+    "seed___2___cancer_cell_module_20": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.0569454767397668
+    },
+    "seed___2___cancer_cell_module_21": {
+        "mean": -7.135754313433093e-18,
+        "std": 0.9260872626042754
+    },
+    "seed___2___cancer_cell_module_22": {
+        "mean": 1.783938578358273e-17,
+        "std": 1.2934518447641874
+    },
+    "seed___2___cancer_cell_module_23": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.599758758714633
+    },
+    "seed___2___cancer_cell_module_24": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.121807313082624
+    },
+    "seed___2___cancer_cell_module_25": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.0438716059362643
+    },
+    "seed___2___cancer_cell_module_26": {
+        "mean": 0.0,
+        "std": 1.2564645569449342
+    },
+    "seed___2___cancer_cell_module_27": {
+        "mean": 3.567877156716546e-18,
+        "std": 0.48500313149825386
+    },
+    "seed___3___cancer_cell_module_1": {
+        "mean": 0.0,
+        "std": 4.513207003257663
+    },
+    "seed___3___cancer_cell_module_2": {
+        "mean": -5.708603450746474e-17,
+        "std": 3.370212038803961
+    },
+    "seed___3___cancer_cell_module_3": {
+        "mean": 0.0,
+        "std": 3.8108836413320564
+    },
+    "seed___3___cancer_cell_module_4": {
+        "mean": -2.854301725373237e-17,
+        "std": 2.8823652225133816
+    },
+    "seed___3___cancer_cell_module_5": {
+        "mean": 0.0,
+        "std": 2.454869224553647
+    },
+    "seed___3___cancer_cell_module_6": {
+        "mean": 0.0,
+        "std": 4.248694474890171
+    },
+    "seed___3___cancer_cell_module_7": {
+        "mean": -7.135754313433092e-17,
+        "std": 3.5341658286856332
+    },
+    "seed___3___cancer_cell_module_8": {
+        "mean": -2.2834413802985896e-16,
+        "std": 3.165630395093949
+    },
+    "seed___3___cancer_cell_module_9": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.314396931730162
+    },
+    "seed___3___cancer_cell_module_10": {
+        "mean": -7.135754313433092e-17,
+        "std": 2.03086550386552
+    },
+    "seed___3___cancer_cell_module_11": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.8776972607679507
+    },
+    "seed___3___cancer_cell_module_12": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.062775577037508
+    },
+    "seed___3___cancer_cell_module_13": {
+        "mean": 1.4271508626866185e-17,
+        "std": 2.069568951285762
+    },
+    "seed___3___cancer_cell_module_14": {
+        "mean": 0.0,
+        "std": 1.9561500667639629
+    },
+    "seed___3___cancer_cell_module_15": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.7073318554734696
+    },
+    "seed___3___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.7741206155639657
+    },
+    "seed___3___cancer_cell_module_17": {
+        "mean": -5.708603450746474e-17,
+        "std": 1.6707222116273746
+    },
+    "seed___3___cancer_cell_module_18": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.229404715759581
+    },
+    "seed___3___cancer_cell_module_19": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.480858446253545
+    },
+    "seed___3___cancer_cell_module_20": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.3100516984466455
+    },
+    "seed___3___cancer_cell_module_21": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.64032767486083
+    },
+    "seed___3___cancer_cell_module_22": {
+        "mean": 1.783938578358273e-17,
+        "std": 1.036080871492782
+    },
+    "seed___3___cancer_cell_module_23": {
+        "mean": 0.0,
+        "std": 0.884889577227997
+    },
+    "seed___3___cancer_cell_module_24": {
+        "mean": 2.1407262940299278e-17,
+        "std": 0.5635579246645805
+    },
+    "seed___3___cancer_cell_module_25": {
+        "mean": 0.0,
+        "std": 0.5716182670889249
+    },
+    "seed___3___cancer_cell_module_26": {
+        "mean": -5.351815735074819e-18,
+        "std": 1.2632934218091942
+    },
+    "seed___4___cancer_cell_module_1": {
+        "mean": 1.1417206901492948e-16,
+        "std": 4.442729061217924
+    },
+    "seed___4___cancer_cell_module_2": {
+        "mean": 1.1417206901492948e-16,
+        "std": 3.3821355752968714
+    },
+    "seed___4___cancer_cell_module_3": {
+        "mean": 1.7125810352239422e-16,
+        "std": 3.782874429886895
+    },
+    "seed___4___cancer_cell_module_4": {
+        "mean": 1.1417206901492948e-16,
+        "std": 2.5190491664685926
+    },
+    "seed___4___cancer_cell_module_5": {
+        "mean": 0.0,
+        "std": 3.6755814077007782
+    },
+    "seed___4___cancer_cell_module_6": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.886234689312441
+    },
+    "seed___4___cancer_cell_module_7": {
+        "mean": -1.1417206901492948e-16,
+        "std": 3.851015081467627
+    },
+    "seed___4___cancer_cell_module_8": {
+        "mean": 2.854301725373237e-17,
+        "std": 3.472388953178086
+    },
+    "seed___4___cancer_cell_module_9": {
+        "mean": 2.854301725373237e-17,
+        "std": 2.006737826265547
+    },
+    "seed___4___cancer_cell_module_10": {
+        "mean": 0.0,
+        "std": 2.3305119746780623
+    },
+    "seed___4___cancer_cell_module_11": {
+        "mean": -1.4271508626866185e-17,
+        "std": 1.9957898414686417
+    },
+    "seed___4___cancer_cell_module_12": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.698922340780951
+    },
+    "seed___4___cancer_cell_module_13": {
+        "mean": 0.0,
+        "std": 1.6427848111430086
+    },
+    "seed___4___cancer_cell_module_14": {
+        "mean": -8.562905176119711e-17,
+        "std": 1.9648354833943125
+    },
+    "seed___4___cancer_cell_module_15": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.7628240671824895
+    },
+    "seed___4___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.755919032166413
+    },
+    "seed___4___cancer_cell_module_17": {
+        "mean": 2.1407262940299278e-17,
+        "std": 1.2836391329811487
+    },
+    "seed___4___cancer_cell_module_18": {
+        "mean": 0.0,
+        "std": 1.2431147407317589
+    },
+    "seed___4___cancer_cell_module_19": {
+        "mean": 8.562905176119711e-17,
+        "std": 1.6008841697471237
+    },
+    "seed___4___cancer_cell_module_20": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.0596662123484835
+    },
+    "seed___4___cancer_cell_module_21": {
+        "mean": 3.567877156716546e-18,
+        "std": 1.3906434593432058
+    },
+    "seed___4___cancer_cell_module_22": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.5123447628541797
+    },
+    "seed___4___cancer_cell_module_23": {
+        "mean": 0.0,
+        "std": 0.9274094346794625
+    },
+    "seed___4___cancer_cell_module_24": {
+        "mean": -1.4271508626866185e-17,
+        "std": 0.8260235557398252
+    },
+    "seed___4___cancer_cell_module_25": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.6406700458862775
+    },
+    "seed___4___cancer_cell_module_26": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.2885127898010047
+    },
+    "seed___4___cancer_cell_module_27": {
+        "mean": 0.0,
+        "std": 0.63469065997957
+    },
+    "seed___5___cancer_cell_module_1": {
+        "mean": 0.0,
+        "std": 4.429857445843557
+    },
+    "seed___5___cancer_cell_module_2": {
+        "mean": 5.708603450746474e-17,
+        "std": 3.4195359774230836
+    },
+    "seed___5___cancer_cell_module_3": {
+        "mean": 1.1417206901492948e-16,
+        "std": 4.105594058704121
+    },
+    "seed___5___cancer_cell_module_4": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.499966492724653
+    },
+    "seed___5___cancer_cell_module_5": {
+        "mean": 2.2834413802985896e-16,
+        "std": 3.735161621948721
+    },
+    "seed___5___cancer_cell_module_6": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.859415060308425
+    },
+    "seed___5___cancer_cell_module_7": {
+        "mean": -5.708603450746474e-17,
+        "std": 3.5703586220030923
+    },
+    "seed___5___cancer_cell_module_8": {
+        "mean": -2.2834413802985896e-16,
+        "std": 3.908977560270975
+    },
+    "seed___5___cancer_cell_module_9": {
+        "mean": 0.0,
+        "std": 2.3323266351979273
+    },
+    "seed___5___cancer_cell_module_10": {
+        "mean": -1.1417206901492948e-16,
+        "std": 2.3498737567871117
+    },
+    "seed___5___cancer_cell_module_11": {
+        "mean": 4.2814525880598555e-17,
+        "std": 1.9760549826924851
+    },
+    "seed___5___cancer_cell_module_12": {
+        "mean": 0.0,
+        "std": 1.824642344137708
+    },
+    "seed___5___cancer_cell_module_13": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.6538049614651065
+    },
+    "seed___5___cancer_cell_module_14": {
+        "mean": -4.2814525880598555e-17,
+        "std": 1.390521638613724
+    },
+    "seed___5___cancer_cell_module_15": {
+        "mean": -7.135754313433092e-17,
+        "std": 1.6281135416857766
+    },
+    "seed___5___cancer_cell_module_16": {
+        "mean": -3.924664872388201e-17,
+        "std": 1.4878087171049328
+    },
+    "seed___5___cancer_cell_module_17": {
+        "mean": 0.0,
+        "std": 1.3639889821378568
+    },
+    "seed___5___cancer_cell_module_18": {
+        "mean": 0.0,
+        "std": 1.3708004226712094
+    },
+    "seed___5___cancer_cell_module_19": {
+        "mean": -2.4975140097015822e-17,
+        "std": 1.35374247450867
+    },
+    "seed___5___cancer_cell_module_20": {
+        "mean": 0.0,
+        "std": 0.9453884984168497
+    },
+    "seed___5___cancer_cell_module_21": {
+        "mean": -8.562905176119711e-17,
+        "std": 1.623924336831158
+    },
+    "seed___5___cancer_cell_module_22": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.2776298190094277
+    },
+    "seed___5___cancer_cell_module_23": {
+        "mean": -2.854301725373237e-17,
+        "std": 0.7757233524762818
+    },
+    "seed___5___cancer_cell_module_24": {
+        "mean": 0.0,
+        "std": 0.4010647793220103
+    },
+    "seed___6___cancer_cell_module_1": {
+        "mean": 0.0,
+        "std": 4.463691268895791
+    },
+    "seed___6___cancer_cell_module_2": {
+        "mean": 5.708603450746474e-17,
+        "std": 3.3581724216478994
+    },
+    "seed___6___cancer_cell_module_3": {
+        "mean": 0.0,
+        "std": 3.877104245468935
+    },
+    "seed___6___cancer_cell_module_4": {
+        "mean": 0.0,
+        "std": 2.602872752507235
+    },
+    "seed___6___cancer_cell_module_5": {
+        "mean": 2.854301725373237e-17,
+        "std": 2.886062853096855
+    },
+    "seed___6___cancer_cell_module_6": {
+        "mean": 0.0,
+        "std": 3.6319028480114537
+    },
+    "seed___6___cancer_cell_module_7": {
+        "mean": 1.1417206901492948e-16,
+        "std": 4.070240522552064
+    },
+    "seed___6___cancer_cell_module_8": {
+        "mean": -1.4271508626866185e-17,
+        "std": 3.2695131615564246
+    },
+    "seed___6___cancer_cell_module_9": {
+        "mean": 5.708603450746474e-17,
+        "std": 2.405626665294993
+    },
+    "seed___6___cancer_cell_module_10": {
+        "mean": -4.2814525880598555e-17,
+        "std": 1.908746899423872
+    },
+    "seed___6___cancer_cell_module_11": {
+        "mean": 1.4271508626866185e-17,
+        "std": 2.078204983962275
+    },
+    "seed___6___cancer_cell_module_12": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.8538087525197975
+    },
+    "seed___6___cancer_cell_module_13": {
+        "mean": 0.0,
+        "std": 2.017463349098082
+    },
+    "seed___6___cancer_cell_module_14": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.994310497382016
+    },
+    "seed___6___cancer_cell_module_15": {
+        "mean": -1.1417206901492948e-16,
+        "std": 1.838474573672488
+    },
+    "seed___6___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.6154048321697254
+    },
+    "seed___6___cancer_cell_module_17": {
+        "mean": 0.0,
+        "std": 1.6808036029236668
+    },
+    "seed___6___cancer_cell_module_18": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.267673479936399
+    },
+    "seed___6___cancer_cell_module_19": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.576930471149059
+    },
+    "seed___6___cancer_cell_module_20": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.3403793303214446
+    },
+    "seed___6___cancer_cell_module_21": {
+        "mean": -1.4271508626866185e-17,
+        "std": 0.9204653676783442
+    },
+    "seed___6___cancer_cell_module_22": {
+        "mean": -5.708603450746474e-17,
+        "std": 1.6367122943098322
+    },
+    "seed___6___cancer_cell_module_23": {
+        "mean": -1.4271508626866185e-17,
+        "std": 0.9747101531577193
+    },
+    "seed___6___cancer_cell_module_24": {
+        "mean": 0.0,
+        "std": 0.6250860983136557
+    },
+    "seed___7___cancer_cell_module_1": {
+        "mean": 5.708603450746474e-17,
+        "std": 4.50963837366022
+    },
+    "seed___7___cancer_cell_module_2": {
+        "mean": 0.0,
+        "std": 3.336965604457897
+    },
+    "seed___7___cancer_cell_module_3": {
+        "mean": -1.1417206901492948e-16,
+        "std": 4.202843553013906
+    },
+    "seed___7___cancer_cell_module_4": {
+        "mean": 0.0,
+        "std": 2.5192187966574293
+    },
+    "seed___7___cancer_cell_module_5": {
+        "mean": 0.0,
+        "std": 3.6678002741297684
+    },
+    "seed___7___cancer_cell_module_6": {
+        "mean": -5.708603450746474e-17,
+        "std": 2.90255987569632
+    },
+    "seed___7___cancer_cell_module_7": {
+        "mean": 0.0,
+        "std": 3.4489831419395562
+    },
+    "seed___7___cancer_cell_module_8": {
+        "mean": 0.0,
+        "std": 3.8576790513696797
+    },
+    "seed___7___cancer_cell_module_9": {
+        "mean": 0.0,
+        "std": 2.371830374980135
+    },
+    "seed___7___cancer_cell_module_10": {
+        "mean": 0.0,
+        "std": 1.9367433387713167
+    },
+    "seed___7___cancer_cell_module_11": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.866021271328854
+    },
+    "seed___7___cancer_cell_module_12": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.6083781547650147
+    },
+    "seed___7___cancer_cell_module_13": {
+        "mean": 1.0703631470149638e-16,
+        "std": 2.002768693977135
+    },
+    "seed___7___cancer_cell_module_14": {
+        "mean": 0.0,
+        "std": 1.8824241757701494
+    },
+    "seed___7___cancer_cell_module_15": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.673636099502073
+    },
+    "seed___7___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.3732266849511514
+    },
+    "seed___7___cancer_cell_module_17": {
+        "mean": 4.2814525880598555e-17,
+        "std": 1.3349440777921084
+    },
+    "seed___7___cancer_cell_module_18": {
+        "mean": 2.1407262940299278e-17,
+        "std": 1.636060355593895
+    },
+    "seed___7___cancer_cell_module_19": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.3804693197273425
+    },
+    "seed___7___cancer_cell_module_20": {
+        "mean": 0.0,
+        "std": 1.286971694913485
+    },
+    "seed___7___cancer_cell_module_21": {
+        "mean": 0.0,
+        "std": 0.9420196388541262
+    },
+    "seed___7___cancer_cell_module_22": {
+        "mean": -4.63824030373151e-17,
+        "std": 1.1157584735707562
+    },
+    "seed___7___cancer_cell_module_23": {
+        "mean": 0.0,
+        "std": 0.916326133607443
+    },
+    "seed___7___cancer_cell_module_24": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.628707938630723
+    },
+    "seed___7___cancer_cell_module_25": {
+        "mean": 1.4271508626866185e-17,
+        "std": 0.7191959699989224
+    },
+    "seed___7___cancer_cell_module_26": {
+        "mean": 0.0,
+        "std": 0.9280858867526746
+    },
+    "seed___7___cancer_cell_module_27": {
+        "mean": 7.135754313433093e-18,
+        "std": 1.3294336364723291
+    },
+    "seed___8___cancer_cell_module_1": {
+        "mean": 0.0,
+        "std": 4.440217317651591
+    },
+    "seed___8___cancer_cell_module_2": {
+        "mean": 0.0,
+        "std": 3.4148377481147256
+    },
+    "seed___8___cancer_cell_module_3": {
+        "mean": 2.2834413802985896e-16,
+        "std": 3.921818476193349
+    },
+    "seed___8___cancer_cell_module_4": {
+        "mean": 0.0,
+        "std": 3.7828102434484316
+    },
+    "seed___8___cancer_cell_module_5": {
+        "mean": 0.0,
+        "std": 2.5544596262375965
+    },
+    "seed___8___cancer_cell_module_6": {
+        "mean": 1.1417206901492948e-16,
+        "std": 2.897097533489389
+    },
+    "seed___8___cancer_cell_module_7": {
+        "mean": 2.2834413802985896e-16,
+        "std": 4.164190956382148
+    },
+    "seed___8___cancer_cell_module_8": {
+        "mean": 0.0,
+        "std": 3.533549357617424
+    },
+    "seed___8___cancer_cell_module_9": {
+        "mean": 0.0,
+        "std": 2.3954371825652734
+    },
+    "seed___8___cancer_cell_module_10": {
+        "mean": -2.854301725373237e-17,
+        "std": 2.210542438553753
+    },
+    "seed___8___cancer_cell_module_11": {
+        "mean": 7.135754313433093e-18,
+        "std": 1.961164730965076
+    },
+    "seed___8___cancer_cell_module_12": {
+        "mean": 0.0,
+        "std": 1.8341010413951757
+    },
+    "seed___8___cancer_cell_module_13": {
+        "mean": -1.4271508626866185e-17,
+        "std": 1.6404244347906156
+    },
+    "seed___8___cancer_cell_module_14": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.8145527943271473
+    },
+    "seed___8___cancer_cell_module_15": {
+        "mean": -3.924664872388201e-17,
+        "std": 1.2369020635413945
+    },
+    "seed___8___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.5141261712392282
+    },
+    "seed___8___cancer_cell_module_17": {
+        "mean": -1.4271508626866185e-17,
+        "std": 1.2579571011807251
+    },
+    "seed___8___cancer_cell_module_18": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.6405182594619423
+    },
+    "seed___8___cancer_cell_module_19": {
+        "mean": 8.919692891791365e-18,
+        "std": 1.3548045217877147
+    },
+    "seed___8___cancer_cell_module_20": {
+        "mean": 5.708603450746474e-17,
+        "std": 0.9442804973993189
+    },
+    "seed___8___cancer_cell_module_21": {
+        "mean": 0.0,
+        "std": 1.265663500866984
+    },
+    "seed___8___cancer_cell_module_22": {
+        "mean": 0.0,
+        "std": 1.057925865344127
+    },
+    "seed___8___cancer_cell_module_23": {
+        "mean": -1.4271508626866185e-17,
+        "std": 0.9455638487983427
+    },
+    "seed___8___cancer_cell_module_24": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.609781445273397
+    },
+    "seed___8___cancer_cell_module_25": {
+        "mean": 1.4271508626866185e-17,
+        "std": 0.7435835424202113
+    },
+    "seed___8___cancer_cell_module_26": {
+        "mean": -1.4271508626866185e-17,
+        "std": 0.5631901712884928
+    },
+    "seed___8___cancer_cell_module_27": {
+        "mean": -2.854301725373237e-17,
+        "std": 0.6561431477671033
+    },
+    "seed___9___cancer_cell_module_1": {
+        "mean": -5.708603450746474e-17,
+        "std": 4.420099356507232
+    },
+    "seed___9___cancer_cell_module_2": {
+        "mean": -5.708603450746474e-17,
+        "std": 3.38573446452322
+    },
+    "seed___9___cancer_cell_module_3": {
+        "mean": 2.854301725373237e-16,
+        "std": 3.802345500431521
+    },
+    "seed___9___cancer_cell_module_4": {
+        "mean": -5.708603450746474e-17,
+        "std": 2.9490272311486914
+    },
+    "seed___9___cancer_cell_module_5": {
+        "mean": -1.1417206901492948e-16,
+        "std": 2.5511450589302163
+    },
+    "seed___9___cancer_cell_module_6": {
+        "mean": 0.0,
+        "std": 3.28461689412404
+    },
+    "seed___9___cancer_cell_module_7": {
+        "mean": -1.1417206901492948e-16,
+        "std": 4.097983993707966
+    },
+    "seed___9___cancer_cell_module_8": {
+        "mean": 0.0,
+        "std": 2.3553433670058816
+    },
+    "seed___9___cancer_cell_module_9": {
+        "mean": 2.854301725373237e-17,
+        "std": 3.3075392202601894
+    },
+    "seed___9___cancer_cell_module_10": {
+        "mean": 0.0,
+        "std": 2.2844532235526684
+    },
+    "seed___9___cancer_cell_module_11": {
+        "mean": -2.2834413802985896e-16,
+        "std": 2.376287037279056
+    },
+    "seed___9___cancer_cell_module_12": {
+        "mean": 0.0,
+        "std": 1.9796042676954124
+    },
+    "seed___9___cancer_cell_module_13": {
+        "mean": 0.0,
+        "std": 2.0562790343707027
+    },
+    "seed___9___cancer_cell_module_14": {
+        "mean": 1.4271508626866185e-17,
+        "std": 1.4717654545113887
+    },
+    "seed___9___cancer_cell_module_15": {
+        "mean": -1.1417206901492948e-16,
+        "std": 2.0686532204151993
+    },
+    "seed___9___cancer_cell_module_16": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.9594089561814427
+    },
+    "seed___9___cancer_cell_module_17": {
+        "mean": 5.708603450746474e-17,
+        "std": 1.8091427210143034
+    },
+    "seed___9___cancer_cell_module_18": {
+        "mean": -1.4271508626866185e-17,
+        "std": 1.4046118650458435
+    },
+    "seed___9___cancer_cell_module_19": {
+        "mean": -1.4271508626866185e-17,
+        "std": 1.2952870445078013
+    },
+    "seed___9___cancer_cell_module_20": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.7303990171076389
+    },
+    "seed___9___cancer_cell_module_21": {
+        "mean": 0.0,
+        "std": 1.383589796596934
+    },
+    "seed___9___cancer_cell_module_22": {
+        "mean": -1.783938578358273e-17,
+        "std": 1.2562332936040805
+    },
+    "seed___9___cancer_cell_module_23": {
+        "mean": -5.708603450746474e-17,
+        "std": 0.9715569844225092
+    },
+    "seed___9___cancer_cell_module_24": {
+        "mean": 0.0,
+        "std": 1.6556222274628776
+    },
+    "seed___9___cancer_cell_module_25": {
+        "mean": 1.4271508626866185e-17,
+        "std": 0.7854439224783812
+    },
+    "seed___9___cancer_cell_module_26": {
+        "mean": 0.0,
+        "std": 0.6817809500165428
+    },
+    "seed___9___cancer_cell_module_27": {
+        "mean": 7.135754313433093e-18,
+        "std": 0.5928708548018766
+    },
+    "seed___10___cancer_cell_module_1": {
+        "mean": 0.0,
+        "std": 4.469493248628287
+    },
+    "seed___10___cancer_cell_module_2": {
+        "mean": -5.708603450746474e-17,
+        "std": 3.3757827901239676
+    },
+    "seed___10___cancer_cell_module_3": {
+        "mean": 2.2834413802985896e-16,
+        "std": 3.7139223797264416
+    },
+    "seed___10___cancer_cell_module_4": {
+        "mean": 2.854301725373237e-17,
+        "std": 2.4920877678914333
+    },
+    "seed___10___cancer_cell_module_5": {
+        "mean": 0.0,
+        "std": 3.6095413376890213
+    },
+    "seed___10___cancer_cell_module_6": {
+        "mean": 2.854301725373237e-17,
+        "std": 2.9223047902405677
+    },
+    "seed___10___cancer_cell_module_7": {
+        "mean": 3.4251620704478844e-16,
+        "std": 4.351410574069416
+    },
+    "seed___10___cancer_cell_module_8": {
+        "mean": -2.854301725373237e-17,
+        "std": 2.1643098854603084
+    },
+    "seed___10___cancer_cell_module_9": {
+        "mean": 2.854301725373237e-17,
+        "std": 3.4662358765693124
+    },
+    "seed___10___cancer_cell_module_10": {
+        "mean": -5.708603450746474e-17,
+        "std": 2.3535258875305156
+    },
+    "seed___10___cancer_cell_module_11": {
+        "mean": 0.0,
+        "std": 1.7951137763000033
+    },
+    "seed___10___cancer_cell_module_12": {
+        "mean": 0.0,
+        "std": 1.837630840362483
+    },
+    "seed___10___cancer_cell_module_13": {
+        "mean": -8.562905176119711e-17,
+        "std": 2.1455193738140506
+    },
+    "seed___10___cancer_cell_module_14": {
+        "mean": 0.0,
+        "std": 1.9826663674325884
+    },
+    "seed___10___cancer_cell_module_15": {
+        "mean": -7.135754313433093e-18,
+        "std": 1.4208263512426913
+    },
+    "seed___10___cancer_cell_module_16": {
+        "mean": 0.0,
+        "std": 1.687761358241164
+    },
+    "seed___10___cancer_cell_module_17": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.462090050524278
+    },
+    "seed___10___cancer_cell_module_18": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.6053585039683504
+    },
+    "seed___10___cancer_cell_module_19": {
+        "mean": 2.854301725373237e-17,
+        "std": 1.2665415084620126
+    },
+    "seed___10___cancer_cell_module_20": {
+        "mean": -2.854301725373237e-17,
+        "std": 1.2878782414340237
+    },
+    "seed___10___cancer_cell_module_21": {
+        "mean": 2.6759078675374096e-17,
+        "std": 1.1842907392525555
+    },
+    "seed___10___cancer_cell_module_22": {
+        "mean": 2.854301725373237e-17,
+        "std": 0.9238900588318264
+    },
+    "seed___10___cancer_cell_module_23": {
+        "mean": 4.9950280194031645e-17,
+        "std": 0.9531412071511434
+    },
+    "seed___10___cancer_cell_module_24": {
+        "mean": -1.3557933195522875e-16,
+        "std": 1.0393739111366016
+    }
+}
